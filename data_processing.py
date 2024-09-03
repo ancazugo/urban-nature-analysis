@@ -19,6 +19,4 @@ inaturalist_df = inaturalist_df[
     (~inaturalist_df['decimalLongitude'].isna())
 ]
 
-print(inaturalist_df.columns)
-
 inaturalist_df.to_csv(inaturalist_trees_path, index=False)
